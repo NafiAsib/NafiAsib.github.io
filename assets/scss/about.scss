@@ -1,0 +1,28 @@
+@import "config";
+
+header {
+    @extend %general-header;   
+}
+
+.container {
+    @extend %general-container;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    
+    .name {
+        font-family: $name;
+        font-size: calc(20px + 2vw);
+    }
+
+    .subtitle {
+        font-family: $nav;
+        font-size: calc(15px + 1.5vw);
+        margin: 15px 0;
+        line-height: 120%;
+    }
+}

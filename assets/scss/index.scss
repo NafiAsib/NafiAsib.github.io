@@ -1,0 +1,101 @@
+@import "config";
+$icon-size: 50px;
+
+%li-style {
+    display: inline;
+    // padding: 10px;
+    list-style: none;
+}
+// html {
+//     height: 100%;
+// }
+
+body {
+    background-color: $primary-bg-color;
+    // height: 100%;
+    
+    
+}
+
+header {
+    height: 80px;
+    background-color: $section-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $nav;
+    nav {
+
+        li {
+            @extend %li-style;
+            font-size: 1.2rem;
+            padding: 5px;
+            a {
+                text-decoration: none;
+                color: $primary-font-color;
+            }
+        }
+    }
+}
+
+
+.container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    min-height: 80vh;
+    // overflow: auto;
+    // border: 1px solid rgb(253, 10, 10);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+        font-size: 72px;
+        font-family: $primary-name;
+        // border: 1px solid black;
+        @media (max-width: $tablet) {
+            font-size: 55px;
+        }
+
+        @media (max-width: $phone) {
+            font-size: 40px;
+        }
+    }
+
+    .social-list {
+        padding: 10px 0px 0px 0px;
+        li {
+            @extend %li-style;
+            padding: 40px;
+            img {
+                height: $icon-size;
+                width: $icon-size;
+
+                @media (max-width: $phone) {
+                    height: calc(#{$icon-size} - 10px);
+                    width: calc(#{$icon-size} - 10px);
+                    
+                }
+            }
+
+            img:hover {
+                transform: scale(1.2); 
+            }
+
+            @media (max-width: $tablet) {
+                padding: 20px;
+            }
+
+            @media (max-width: $phone) {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+// .linkedin:hover {
+//     color: #0072b1;
+// }
