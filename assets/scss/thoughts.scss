@@ -50,6 +50,12 @@ header {
     font-style: italic;
 
     }
+    a {
+        color: black;
+    }
+    a:hover {
+        color: lighten(black, 50%);
+    }
 }
 
 .thought-list {
