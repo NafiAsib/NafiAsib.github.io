@@ -15,8 +15,45 @@ header {
     justify-content: center;
     align-items: center;
 
+    // border: 1px solid red;
     p {
         font-family: $name;
         font-size: 50px;
     }
+
+}
+
+.post {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    // text-align: right;
+    flex-direction: row;
+    // border: 1px solid black;
+    max-width: 100%;
+
+    .post-title{
+        order: 2;
+        font-size: calc(25px + 2vw);
+        // text-align: left;
+    // border: 1px solid black;
+    width: 60%;
+
+    }
+    .post-date {
+        order: 1;
+        font-size: calc(15px + .75vw);
+    // border: 1px solid black;
+    // width: 35%;
+    text-align: right;
+    margin-right: 10px;
+    font-style: italic;
+
+    }
+}
+
+.thought-list {
+    width: 100%;
+    // border: 1px solid black;
+
 }
