@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
-//Font Variables
-$primary-name: 'Crimson Text', sans-serif;
-$name: 'Rubik', sans-serif;
-$nav: 'Roboto', sans-serif;
-
-$primary-font-color : #31112C;
-$primary-bg-color: #2EC1AC;
-$section-color: #1E5F74;
-
-
-$desktop: 1200px;
-$laptop: 1024px;
-$tablet: 768px;
-$phone: 530px;
-
+// global setup
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,31 +18,3 @@ li {
     list-style: none;
 }
 
-%general-header {
-    background-color: $section-color;
-    font-family: $nav;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 20px;
-    nav {
-        font-size: 25px;
-
-        a {
-            color: $primary-font-color;
-        }
-    }
-
-    @media screen and (max-width: $phone) {
-        p {
-            font-size: 13px;
-        }
-    }
-}
-
-%general-container {
-    max-width: 1100px;
-    padding: 0 30px;
-    margin: 0 auto;
-}

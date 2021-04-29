@@ -19,7 +19,7 @@ li {
 }
 
 header {
-  background-color: #1E5F74;
+  background-color: #1e5f74;
   font-family: "Roboto", sans-serif;
   height: 60px;
   display: flex;
@@ -33,7 +33,7 @@ header nav {
 }
 
 header nav a {
-  color: #31112C;
+  color: #31112c;
 }
 
 @media screen and (max-width: 530px) {
