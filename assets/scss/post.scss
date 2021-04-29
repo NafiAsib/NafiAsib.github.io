@@ -1,21 +1,36 @@
-@import 'config';
+@import "styles";
 
 $font-color: #373737;
 
 header {
-    @extend %general-header;
+  @extend %general-header;
 }
 
 #container {
-    max-width: 1100px;
-    padding: 0 30px;
-    margin: 0 auto;
-    font-family: $nav;
-    margin-top: 30px;
-    
-   
+  max-width: 500px;
+  padding: 0 30px;
+  margin: 0 auto;
+  font-family: $nav;
+  margin-top: 30px;
 
-    h4 {
-        color: lighten($font-color, 30%);
-    }
+  h4 {
+    color: lighten($font-color, 30%);
+    font-style: italic;
+  }
+}
+
+#article {
+  display: flex;
+  flex-direction: column;
+
+  // main title & date centered
+  h1,
+  h4 {
+    align-self: center;
+  }
+
+  // gap for each paragraph section in the posts
+  p {
+    margin: 20px 0px 20px 0px;
+  }
 }

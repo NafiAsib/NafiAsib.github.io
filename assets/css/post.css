@@ -19,7 +19,7 @@ li {
 }
 
 header {
-  background-color: #1E5F74;
+  background-color: #1e5f74;
   font-family: "Roboto", sans-serif;
   height: 60px;
   display: flex;
@@ -33,7 +33,7 @@ header nav {
 }
 
 header nav a {
-  color: #31112C;
+  color: #31112c;
 }
 
 @media screen and (max-width: 530px) {
@@ -43,7 +43,7 @@ header nav a {
 }
 
 #container {
-  max-width: 1100px;
+  max-width: 500px;
   padding: 0 30px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -52,4 +52,19 @@ header nav a {
 
 #container h4 {
   color: #848484;
+  font-style: italic;
+}
+
+#article {
+  display: flex;
+  flex-direction: column;
+}
+
+#article h1,
+#article h4 {
+  align-self: center;
+}
+
+#article p {
+  margin: 20px 0px 20px 0px;
 }
